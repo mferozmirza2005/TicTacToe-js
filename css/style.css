@@ -1,0 +1,158 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+    background-color: #01180c;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+}
+
+#Selection {
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#Selection div h1 {
+    padding: 0px 20px;
+    font-size: 55px;
+    padding: 0 0;
+    margin: 0;
+}
+
+#GameBoard div h1 span,
+#Selection div h1 span {
+    color: seagreen;
+}
+
+#Selection div p {
+    border-top: 5px solid seagreen;
+    padding: 0px 20px;
+    font-weight: bold;
+    font-size: 27px;
+}
+
+#Selection .SelectBTN {
+    justify-content: space-evenly;
+    padding: 10px 0px 5px;
+    align-items: center;
+    display: flex;
+}
+
+#Selection .SelectBTN button {
+    background-color: seagreen;
+    border-radius: 10px;
+    padding: 7px 12px;
+    font-size: 20px;
+    color: white;
+    outline: none;
+    border: none;
+}
+
+#Selection .SelectBTN button:hover {
+    transform: scale(0.9);
+}
+
+#GameBoard {
+    display: none;
+}
+
+#GameBoard div h1{
+    text-align: center;
+    color: white;
+}
+
+#GameBoard #playerBox {
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;
+    position: relative;
+    margin: 10px auto;
+    display: flex;
+}
+
+#GameBoard #playerBox #play1,
+#GameBoard #playerBox #play2 {
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 20px;
+    z-index: 1000;
+}
+
+#GameBoard #playerBox .activePlay {
+    background-color: seagreen;
+    transition: all ease 500ms;
+    position: absolute;
+    z-index: 100;
+    height: 100%;
+    width: 50%;
+    top: 0;
+}
+
+#GameBoard #playerBox .activePlay.playX {
+    left: 0%;
+    right: 50%;
+}
+
+#GameBoard #playerBox .activePlay.playO {
+    left: 50%;
+    right: 0%;
+}
+
+#TileBox {
+    background-color: seagreen;
+    padding: 10px 10px 20px;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    flex-wrap: wrap;
+    display: flex;
+    height: 250px;
+    width: 250px;
+}
+
+#TileBox .tiles {
+    border: 1px solid transparent;
+    height: 32.33333333333333%;
+    background-color: white;
+    width: 30.33333333333333%;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 80px;
+    font-weight: bold;
+    font-size: 40px;
+    margin: 2px;
+}
+
+#result {
+    background-color: white;
+    padding: 5px 20px 10px;
+    border-radius: 10px;
+    text-align: center;
+    display: none;
+}
+
+#result h1 {
+    padding: 5px 0px 0px;
+    color: seagreen;
+}
+
+#result h3 {
+    padding: 0px 0px 10px;
+    font-size: 27px;
+}
+
+#result button {
+    background-color: seagreen;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: white;
+    outline: none;
+    border: none;
+}
