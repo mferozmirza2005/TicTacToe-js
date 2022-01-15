@@ -108,7 +108,7 @@ function selectWinner() {
       else {
         var allBoxes = 0;
         for (let i = 0; i < TileBox.children.length; i++) {
-          if (TileBox.children[i].innerHTML == "") {
+          if (TileBox.children[i].innerHTML !== "") {
             allBoxes++;
           }
         }
